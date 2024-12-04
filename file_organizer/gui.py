@@ -1,10 +1,10 @@
 import tkinter as tk
 from tkinter import filedialog, messagebox
-from sorter import organize_files
-from logger import log_error
+from file_organizer.sorter import organize_files
+from file_organizer.logger import log_error
 import tkinter as tk
 from tkinter import filedialog, messagebox
-from sorter import organize_files
+from file_organizer.sorter import organize_files
 
 def launch_gui():
     global directory_label

@@ -1,8 +1,8 @@
 import os
 import sys
-from gui import launch_gui
-from sorter import organize_files
-from logger import log_error
+from file_organizer.gui import launch_gui
+from file_organizer.sorter import organize_files
+from file_organizer.logger import log_error
 
 
 def main():
