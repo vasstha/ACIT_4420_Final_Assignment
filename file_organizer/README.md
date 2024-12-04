@@ -59,7 +59,7 @@ The following dependencies are bundled in the executable:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/file-organizer.git
+   https://github.com/vasstha/ACIT_4420_Final_Assignment.git
    cd file-organizer
 
 
