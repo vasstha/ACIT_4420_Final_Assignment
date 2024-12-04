@@ -1,6 +1,6 @@
 # Project Overview
 
-Welcome to the **Utility Suite** repository! This project comprises three core components: **FileOrganizer**, **RouteOptimizer**, and **TarjanPlanner**. Each module serves a distinct purpose aimed at optimizing tasks in file management, route planning, and optimization through graph algorithms.
+Welcome to the **ACIT_4420 Final Assignment** repository! This project comprises three core components: **FileOrganizer**, **RouteOptimizer**, and **TarjanPlanner**. Each module serves a distinct purpose aimed at optimizing tasks in file management, route planning, and optimization through graph algorithms.
 
 ---
 
