@@ -1,0 +1,2 @@
+2024-11-25 15:17:30,543 - INFO - Optimization Criteria: time, Population Size: 50, Generations: 200, Elapsed Time: 11.40 seconds, Optimal Route: [2, 1, 6, 3, 9, 8, 0, 4, 7, 5], Total Time: 1.14, Total Cost: 82.71
+2024-11-25 20:47:10,071 - INFO - Optimization Criteria: time, Population Size: 50, Generations: 200, Elapsed Time: 9.19 seconds, Optimal Route: [7, 5, 9, 8, 0, 2, 3, 1, 6, 4], Total Time: 1.15, Total Cost: 74.21
