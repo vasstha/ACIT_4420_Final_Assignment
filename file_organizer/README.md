@@ -62,7 +62,7 @@ The following dependencies are bundled in the executable:
    https://github.com/vasstha/ACIT_4420_Final_Assignment.git
    cd file-organizer
 
-
+---
 
 ## Install Dependencies
 
@@ -73,18 +73,19 @@ python -m venv venv
 source venv/bin/activate  # On Linux/macOS
 venv\Scripts\activate     # On Windows
 
+---
 
 ## Install required libraries
 pip install -r requirements.txt
 
-###Run the Application:
+## Run the Application:
 
 ##GUI mode
 python -m file_organizer.main
 
 ##command line mode
 python -m file_organizer.main "C:\path\to\your\folder"
-
+---
 ###Usage Instructions
 
 GUI Mode:
@@ -98,7 +99,7 @@ Command-Line Mode:
 Open a terminal or command prompt.
 Run the following command:
   main.exe "C:\path\to\your\folder"
-
+---
 ## Project Structure
 
 file_organizer/
@@ -112,7 +113,7 @@ file_organizer/
 ├── README.md              # Documentation
 ├── requirements.txt       # Python dependencies
 └── __init__.py            # Package initialization file
-
+---
 
 ## Contributing
 
