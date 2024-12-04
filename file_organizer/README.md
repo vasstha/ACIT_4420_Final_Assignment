@@ -67,8 +67,7 @@ The following dependencies are bundled in the executable:
 ## Install Dependencies
 
 Create a virtual environment (optional but recommended):
-
-```bash
+bash
 python -m venv venv
 source venv/bin/activate  # On Linux/macOS
 venv\Scripts\activate     # On Windows
