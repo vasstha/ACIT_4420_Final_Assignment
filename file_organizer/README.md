@@ -79,13 +79,14 @@ pip install -r requirements.txt
 
 ## Run the Application:
 
-##GUI mode
+## GUI mode
 python -m file_organizer.main
 
-##command line mode
+## command line mode
 python -m file_organizer.main "C:\path\to\your\folder"
----
-###Usage Instructions
+
+
+### Usage Instructions
 
 GUI Mode:
 
@@ -98,21 +99,6 @@ Command-Line Mode:
 Open a terminal or command prompt.
 Run the following command:
   main.exe "C:\path\to\your\folder"
----
-## Project Structure
-
-file_organizer/
-├── config.py              # File type mapping configuration
-├── file_organizer.log     # Log file for debugging
-├── gui.py                 # GUI logic using Tkinter
-├── logger.py              # Error logging utilities
-├── main.py                # Application entry point
-├── sorter.py              # Core file organization logic
-├── utils.py               # Utility functions
-├── README.md              # Documentation
-├── requirements.txt       # Python dependencies
-└── __init__.py            # Package initialization file
----
 
 ## Contributing
 
