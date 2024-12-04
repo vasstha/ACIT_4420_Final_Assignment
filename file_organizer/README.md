@@ -98,3 +98,36 @@ Command-Line Mode:
 Open a terminal or command prompt.
 Run the following command:
   main.exe "C:\path\to\your\folder"
+
+## Project Structure
+
+file_organizer/
+├── config.py              # File type mapping configuration
+├── file_organizer.log     # Log file for debugging
+├── gui.py                 # GUI logic using Tkinter
+├── logger.py              # Error logging utilities
+├── main.py                # Application entry point
+├── sorter.py              # Core file organization logic
+├── utils.py               # Utility functions
+├── README.md              # Documentation
+├── requirements.txt       # Python dependencies
+└── __init__.py            # Package initialization file
+
+
+## Contributing
+
+Contributions are welcome! If you have ideas for improvement or encounter bugs, feel free to:
+
+- Open an issue on the [GitHub repository](#).
+- Submit a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For any questions or support, feel free to contact me:
+
+- Vaskar Shrestha
+- vashr0444@oslomet.no
