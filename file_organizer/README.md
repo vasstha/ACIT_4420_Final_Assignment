@@ -1,31 +1,100 @@
 # File Organizer
 
 ## Overview
-The **File Organizer** is a Python-based tool designed to declutter and organize files in a selected directory. It categorizes files into subfolders based on their file types (e.g., images, documents, videos) for better organization and ease of access. The tool includes a graphical user interface (GUI) and can also be run via the command line.
+
+**File Organizer** is a Python-based application designed to declutter and organize files in a directory. It categorizes files into subfolders based on their types (e.g., images, documents, videos) and provides a user-friendly graphical interface for ease of use. The application can also be run via the command line for advanced users.
 
 ---
 
 ## Features
-- **File Type-Based Organization**:
-  - Automatically sorts files into predefined categories such as Images, Documents, Videos, and more.
-  - Handles various file types based on extensions defined in a configuration file.
-- **GUI Support**:
-  - User-friendly interface for selecting directories and organizing files.
+
+- **Automated File Organization**:
+  - Categorizes files into predefined folders based on their extensions.
+  - Handles unsupported file types by placing them in a "Miscellaneous" folder.
+
+- **Graphical User Interface (GUI)**:
+  - Intuitive interface for selecting folders and initiating the organization process.
+  - Displays success or error notifications.
+
 - **Command-Line Support**:
-  - Allows running the tool with a specified directory directly from the terminal.
-- **Error Logging**:
-  - All errors are logged in a dedicated log file (`file_organizer.log`) for debugging purposes.
+  - Execute file organization tasks directly from the terminal with optional arguments.
+
+- **Cross-Platform Compatibility**:
+  - Works on Windows, macOS, and Linux (via source installation).
 
 ---
 
-## File Descriptions
+## Requirements
 
-### `config.py`
-- Contains a dictionary `FILE_TYPE_MAP` that maps file extensions to their respective categories.
-- Example:
-  ```python
-  FILE_TYPE_MAP = {
-      "Images": [".jpg", ".jpeg", ".png", ".gif"],
-      "Documents": [".txt", ".pdf", ".docx"],
-      ...
-  }
+### Supported Systems
+- Windows 10/11 (Executable provided)
+- macOS and Linux (Source installation)
+
+### Dependencies
+The following dependencies are bundled in the executable:
+- Python 3.8 or later
+- Libraries:
+  - `tkinter` (for GUI)
+  - Standard Python modules like `os`, `shutil`, and `logging`
+
+---
+
+## Installation
+
+### Windows (Executable Installation)
+1. **Download the ZIP File**:
+   - Download the `FileOrganizer.zip` file from the [Releases](#) page (replace `#` with your actual link).
+   
+2. **Extract the ZIP File**:
+   - Right-click the ZIP file and select **Extract All**.
+   - Open the extracted folder.
+
+3. **Run the Application**:
+   - Double-click the `main.exe` file to launch the application.
+   - Follow the instructions in the GUI to organize files.
+
+---
+
+### Source Installation (macOS/Linux/Windows)
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/yourusername/file-organizer.git
+   cd file-organizer
+
+
+
+## Install Dependencies
+
+Create a virtual environment (optional but recommended):
+
+```bash
+python -m venv venv
+source venv/bin/activate  # On Linux/macOS
+venv\Scripts\activate     # On Windows
+
+
+## Install required libraries
+pip install -r requirements.txt
+
+###Run the Application:
+
+##GUI mode
+python -m file_organizer.main
+
+##command line mode
+python -m file_organizer.main "C:\path\to\your\folder"
+
+###Usage Instructions
+
+GUI Mode:
+
+Open the application (main.exe or via Python).
+Select a folder to organize using the GUI.
+Click Organize Files to start the process.
+View the success message once the organization is complete.
+Command-Line Mode:
+
+Open a terminal or command prompt.
+Run the following command:
+  main.exe "C:\path\to\your\folder"
