@@ -4,7 +4,7 @@ from tkinter import ttk, messagebox
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 from matplotlib.figure import Figure
 import tkinter as tk
-from evolutionary_optimizer import EvolutionaryOptimizer
+from modules.evolutionary_optimizer import EvolutionaryOptimizer
 from data.relatives_data import relatives, transport_modes
 import ttkbootstrap as ttk
 from ttkbootstrap.constants import SUCCESS, INFO, PRIMARY
