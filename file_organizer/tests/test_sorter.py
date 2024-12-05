@@ -2,13 +2,13 @@ import os
 import sys
 import pytest
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from file_organizer.sorter import organize_files, determine_folder
+from src.sorter import organize_files, determine_folder
 from unittest.mock import patch
-from gui import launch_gui
+from src.gui import launch_gui
 import logging
-from logger import log_error
+from src.logger import log_error
 from main import main
-from utils import log_function_call
+from src.utils import log_function_call
 from io import StringIO
 
 @pytest.fixture

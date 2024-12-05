@@ -1,6 +1,6 @@
 import os
 import shutil
-from file_organizer.config import FILE_TYPE_MAP
+from src.config import FILE_TYPE_MAP
 
 def organize_files(directory):
     """
