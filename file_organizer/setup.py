@@ -11,7 +11,6 @@ setup(
     url="https://github.com/vasstha/ACIT_4420_Final_Assignment.git",  # Replace with your project's GitHub link
     packages=find_packages(),  # Automatically find Python packages in your project
     install_requires=[
-        "tkinter",  # GUI library (comes pre-installed with Python)
     ],
     entry_points={
         "console_scripts": [
