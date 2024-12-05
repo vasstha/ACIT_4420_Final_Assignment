@@ -40,8 +40,8 @@ To use TarjanPlanner, ensure you have the following installed:
 
 1. Clone the repository:
    ```bash
-   git clone <repository-link>
-   cd <repository-name>
+   git clone https://github.com/vasstha/ACIT_4420_Final_Assignment.git
+   cd tarjan_planner
    ```
 2. Install the required dependencies:
    ```bash
