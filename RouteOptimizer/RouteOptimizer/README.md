@@ -13,7 +13,7 @@ RouteOptimizer is a GUI-based Python application for optimizing travel routes. I
 ### Clone the Repository
 To get started, clone the repository from GitHub:
 ```bash
-git clone https://github.com/yourusername/your-repo-name.git
+git clone https://github.com/vasstha/ACIT_4420_Final_Assignment.git
 ```
 
 Navigate into the project directory:
