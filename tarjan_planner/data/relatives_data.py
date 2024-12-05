@@ -13,8 +13,8 @@ relatives = [
 ]
 
 transport_modes = {
-    'walking': {'speed': 5, 'cost_per_km': 0},
-    'bicycle': {'speed': 15, 'cost_per_km': 0},
-    'bus': {'speed': 40, 'cost_per_km': 2},
-    'train': {'speed': 80, 'cost_per_km': 5}
+    'walking': {'speed': 5, 'cost_per_km': 0, 'transfer_time_min': 0},
+    'bicycle': {'speed': 15, 'cost_per_km': 0, 'transfer_time_min': 1},
+    'bus': {'speed': 40, 'cost_per_km': 2, 'transfer_time_min': 5},
+    'train': {'speed': 80, 'cost_per_km': 5, 'transfer_time_min': 2}
 }

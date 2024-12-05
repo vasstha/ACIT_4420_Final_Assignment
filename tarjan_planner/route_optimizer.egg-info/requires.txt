@@ -1,0 +1,6 @@
+ttkbootstrap
+matplotlib
+geopy
+numpy
+pandas
+setuptools

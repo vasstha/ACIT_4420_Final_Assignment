@@ -36,6 +36,7 @@ class EvolutionaryOptimizer:
         total_distance = 0
         total_time = 0
         total_cost = 0
+        total_transfer_time = 0
         transport_modes = []
 
         for i in range(len(route) - 1):
@@ -51,24 +52,23 @@ class EvolutionaryOptimizer:
             total_time += distance / mode_details['speed']
             total_cost += distance * mode_details['cost_per_km']
 
-        start = self.relatives[route[-1]]
-        end = self.relatives[route[0]]
-        distance = self._compute_distance(start, end)
-        total_distance += distance
-        best_mode = self._select_best_transport_mode(distance)
-        transport_modes.append(best_mode)
-        mode_details = self.transport_modes[best_mode]
-        total_time += distance / mode_details['speed']
-        total_cost += distance * mode_details['cost_per_km']
+            if i > 0 and transport_modes[i] != transport_modes[i - 1]:  # Adding transfer time
+                total_transfer_time += mode_details['transfer_time_min']
 
+        total_time += total_transfer_time / 60.0  # Convert minutes to hours
+
+        # Fitness based on selected criteria
         if self.criteria == 'time':
             fitness = 1 / total_time
         elif self.criteria == 'cost':
             fitness = 1 / total_cost
-        else:
-            fitness = 1 / len(transport_modes)
+        else:  # Transfers
+            fitness = 1 / len(set(transport_modes))
 
         return fitness, total_time, total_cost, transport_modes
+
+        logging.info(f"Transport Modes: {transport_modes}")
+        logging.info(f"Route Order: {route}")
 
     def _evaluate_population(self, population):
         """

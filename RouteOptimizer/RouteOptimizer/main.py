@@ -124,7 +124,8 @@ class RouteOptimizerApp:
 
 # Main GUI entry point
 def main():
-    root = ttk.Tk()
+    import tkinter as tk
+    root = tk.Tk()
     app = RouteOptimizerApp(root)
     root.mainloop()
 

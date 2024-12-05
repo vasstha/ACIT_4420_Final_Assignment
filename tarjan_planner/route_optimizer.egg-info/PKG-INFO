@@ -1,0 +1,139 @@
+Metadata-Version: 2.1
+Name: route_optimizer
+Version: 1.0
+Summary: A GUI-based application for optimizing travel routes using evolutionary algorithms.
+Home-page: 
+Author: Your Name
+Author-email: your_email@example.com
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: ttkbootstrap
+Requires-Dist: matplotlib
+Requires-Dist: geopy
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: setuptools
+
+TarjanPlanner
+TarjanPlanner is an intelligent route optimization application designed to solve the Traveling Salesman Problem (TSP) with custom optimization criteria, such as minimizing time, cost, or the number of transfers. The application allows users to visualize optimal routes and interact with a user-friendly Graphical User Interface (GUI). It is particularly useful for planning travel routes between multiple locations efficiently.
+
+Features
+Optimization Criteria: Choose between minimizing travel time, cost, or transfers.
+Dynamic Visualization: Displays routes on a graph with detailed segment information.
+Transport Modes: Supports various transport modes (walking, bicycle, bus, and train) with associated speeds and costs.
+Interactive GUI: User-friendly interface with tooltips for inputs, and the ability to save visualizations.
+Customizable Parameters: Adjust population size and generations for evolutionary optimization.
+Detailed Output: Provides a summary of total time, total cost, and the sequence of routes.
+Save Graphs: Save route visualizations as image files for later reference.
+Installation
+Prerequisites
+Python 3.8 or higher
+Required Python packages:
+ttkbootstrap
+matplotlib
+geopy
+numpy
+pandas
+Steps
+Clone the repository:
+
+bash
+Copy code
+git clone https://github.com/your-username/TarjanPlanner.git
+cd TarjanPlanner
+Install the dependencies:
+
+bash
+Copy code
+pip install -r requirements.txt
+Install the package:
+
+bash
+Copy code
+pip install .
+Usage
+Running the Application
+After installation, you can start the application using the command:
+
+bash
+Copy code
+tarjan_planner
+Alternatively, you can run the program in development mode using:
+
+bash
+Copy code
+python main.py
+Modes
+Command Line Interface (CLI):
+
+Choose CLI mode by entering 1 when prompted.
+Follow the interactive prompts to input optimization criteria, population size, and generations.
+Graphical User Interface (GUI):
+
+Choose GUI mode by entering 2 when prompted.
+Use the intuitive interface to select optimization criteria, adjust parameters, and visualize results.
+GUI Overview
+Input Section: Select optimization criteria (time, cost, or transfers) and specify population size and generations.
+Results Table: Displays detailed segment information, including start and end locations, transport modes, and distances.
+Graph Visualization:
+Visualizes the optimal route with arrows indicating direction.
+Displays the summary of total time and cost in the top-right corner.
+Color-coded transport modes:
+Green: Walking
+Yellow: Bicycle
+Blue: Bus
+Red: Train
+Example
+CLI Example
+bash
+Copy code
+Select Mode:
+1. CLI (Command Line Interface)
+2. GUI (Graphical User Interface)
+Enter the number corresponding to your choice: 1
+
+Welcome to the Route Optimizer CLI!
+Enter optimization criteria (time/cost/transfers): cost
+Enter population size (e.g., 50): 100
+Enter number of generations (e.g., 200): 300
+
+--- Optimal Route Summary ---
+Optimal Route: Relative_1 (bus) -> Relative_4 (bicycle) -> Relative_3 (train)
+Total Time: 1.56 hours
+Total Cost: 45.67 USD
+GUI Example
+Launch the GUI mode:
+bash
+Copy code
+tarjan_planner
+Input optimization criteria (e.g., time) and parameters (e.g., population size = 50, generations = 200).
+Click Run Optimizer to display the optimal route and its visualization.
+Project Structure
+graphql
+Copy code
+TarjanPlanner/
+â”œâ”€â”€ gui_main.py              # GUI implementation for the Route Optimizer
+â”œâ”€â”€ main.py                  # Main script for CLI and GUI entry points
+â”œâ”€â”€ evolutionary_optimizer.py # Evolutionary algorithm logic
+â”œâ”€â”€ route_visualizer.py      # Visualization logic for route plotting
+â”œâ”€â”€ relatives_data.py        # Relatives' data and transport modes
+â”œâ”€â”€ README.md                # Project description and documentation
+â”œâ”€â”€ setup.py                 # Setup script for packaging and installation
+â”œâ”€â”€ requirements.txt         # Dependencies list
+â””â”€â”€ tests/                   # Unit tests
+Future Enhancements
+Add real-time traffic data integration.
+Support for additional transport modes and costs.
+Export route details to a PDF or CSV file.
+Multi-language support in the GUI.
+Contributing
+We welcome contributions to enhance TarjanPlanner. Feel free to fork this repository, make your changes, and submit a pull request.
+
+License
+This project is licensed under the MIT License.
+
+Contact
+For questions, suggestions, or bug reports, please contact:
+
+Author: Vaskar Shrestha
+Email: vashr0444@oslomet.no

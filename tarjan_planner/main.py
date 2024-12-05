@@ -1,16 +1,46 @@
-import tkinter as tk
-import time
 import logging
+import time
+import tkinter as tk
 from evolutionary_optimizer import EvolutionaryOptimizer
 from route_visualizer import RouteVisualizer
-from relatives_data import relatives, transport_modes
+from data.relatives_data import relatives, transport_modes
 from gui_main import RouteOptimizerApp
+
+# Configure Logging
+logging.basicConfig(
+    filename="execution_log.txt",
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s"
+)
+
+
+def format_route(result, relatives):
+    """Format the optimal route with transport modes."""
+    route_str = []
+    for i in range(len(result['order']) - 1):
+        start = relatives[result['order'][i]]['relative']
+        end = relatives[result['order'][i + 1]]['relative']
+        mode = result['transport_modes'][i]
+        route_str.append(f"{start} ({mode}) -> {end}")
+    return " -> ".join(route_str)
+
+
+def display_summary(result, relatives):
+    """Display the route summary with metrics."""
+    route = format_route(result, relatives)
+    total_time = f"{result['total_time']:.2f} hours"
+    total_cost = f"{result['total_cost']:.2f} USD"
+
+    print("\n--- Optimal Route Summary ---")
+    print(f"Optimal Route: {route}")
+    print(f"Total Time: {total_time}")
+    print(f"Total Cost: {total_cost}")
 
 
 def run_cli():
     """Run the program in CLI mode."""
     print("Welcome to the Route Optimizer CLI!")
-    logging.basicConfig(filename="cli_execution_log.txt", level=logging.INFO, format="%(asctime)s - %(message)s")
+    logging.info("Running CLI mode")
 
     try:
         # Get user inputs
@@ -39,13 +69,8 @@ def run_cli():
         # End timing
         elapsed_time = time.time() - start_time
 
-        # Display results
-        print("\n--- Optimal Route ---")
-        print("Optimal Route Order:", result['order'])
-        print(f"Total Time: {result['total_time']:.2f} hrs")
-        print(f"Total Cost: {result['total_cost']:.2f}")
-        print("Transport Modes:", result['transport_modes'])
-        print(f"Execution Time: {elapsed_time:.2f} seconds")
+        # Display results in a formatted way
+        display_summary(result, relatives)
 
         # Log the execution details
         logging.info(
