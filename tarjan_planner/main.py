@@ -1,10 +1,10 @@
 import logging
 import time
 import tkinter as tk
-from evolutionary_optimizer import EvolutionaryOptimizer
-from route_visualizer import RouteVisualizer
+from modules.evolutionary_optimizer import EvolutionaryOptimizer
+from modules.route_visualizer import RouteVisualizer
 from data.relatives_data import relatives, transport_modes
-from gui_main import RouteOptimizerApp
+from modules.gui_main import RouteOptimizerApp
 
 # Configure Logging
 logging.basicConfig(
