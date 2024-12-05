@@ -45,7 +45,7 @@ To use TarjanPlanner, ensure you have the following installed:
    ```
 2. Install the required dependencies:
    ```bash
-   pip install -r requirements.txt
+   pip install .
    ```
 3. Run the program:
    - **For CLI mode:**
