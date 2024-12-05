@@ -123,10 +123,11 @@ class RouteOptimizerApp:
         plt.show()  # Opens the graph in a separate Matplotlib window
 
 # Main GUI entry point
-if __name__ == "__main__":
-    import tkinter as tk
-
-    root = tk.Tk()
+def main():
+    root = ttk.Tk()
     app = RouteOptimizerApp(root)
     root.mainloop()
+
+if __name__ == "__main__":
+    main()
 

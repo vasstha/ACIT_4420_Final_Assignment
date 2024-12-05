@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: RouteOptimizer
+Version: 1.0.0
+Summary: A Fundamental Python Program for Route Calculation
+Home-page: https://github.com/vasstha/ACIT_4420_Final_Assignment.git
+Author: Vaskar Shrestha
+Author-email: vashr0444@oslomet.no
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: matplotlib>=3.0.0
+Requires-Dist: geopy>=2.0.0
+Requires-Dist: numpy>=1.18.0
